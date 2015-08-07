@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dice : NSObject
+@interface Dice : NSObject {}
+
+@property (nonatomic, strong) NSString *value;
+
+
+-(instancetype)initWithValue:(NSString *)value;
+
+-(id)getRandomNumberBetween:(int)from to:(int)to;
+
+
+
+
 
 @end

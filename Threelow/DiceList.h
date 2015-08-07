@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dice.h"
+
+@class DiceList;
 
 @interface DiceList : NSObject
+
+@property (nonatomic, strong) NSMutableArray *dices;
+
+@property (nonatomic, strong) NSString *userInput;
+
+@property (nonatomic, strong) DiceList *diceList;
+
+-(id)addNewDiceGameWithDictionary:(NSDictionary *)diceDict;
+
 
 @end

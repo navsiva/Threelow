@@ -10,4 +10,11 @@
 
 @interface InputManager : NSObject
 
+@property (nonatomic, strong) NSDictionary *inputDictionary;
+
+-(NSMutableDictionary *)takeInput;
+
+
+
+
 @end
